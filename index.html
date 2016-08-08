@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Proof-of-concept. Delivery calculator</title>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+        <meta charset="utf-8">
+        <link href="./bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="./css/style.css" rel="stylesheet"/>
+
+        <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script> -->
+        <!-- script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5ilGZFk6MUbTgc8kTlGC8BerUv6IpDqc"></script -->
+        <script src="./js/map.js"></script>
+    </head>
+    <body>
+        <div class="container">
+          <nav class="nav navbar"></nav>
+
+          <div class="col-lg-8" style="padding-top:15px">
+              <div id="map-canvas"></div>
+          </div>
+          <div class="col-lg-4">
+            <div id="calculator">
+               <form role="form" style="padding-top: 15px;">
+                 <fieldset>
+                    <div class="form-group">
+                      <input class="form-control" placeholder="Откуда" name="from" type="from"
+                        value="Киев, пр. Оболонский 15" autofocus>
+                    </div>
+                    <div class="form-group">
+                      <input class="form-control" placeholder="Куда" name="to"
+                        value="Киев, ул.Богдана Хмельницького 42">
+                    </div>
+                    <div class="form-group">
+                      <input class="form-control" placeholder="Стоимость 1 км."
+                        name="price"  value="11.57"
+                        type="number" style="text-align:right">
+                    </div>
+
+                    <input id="calc-button" type="button" class="btn btn-lg btn-success btn-block" value="Рассчитать">
+                  </fieldset>
+               </form>
+
+               <div id="routeWrapper" class="panel" style="display:none">
+                 <h3>Маршруты:</h3>
+                 <ul id="routeList">
+                 </ul>
+               </div>
+            </div>
+        </div>
+    </body>
+</html>

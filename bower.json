@@ -1,0 +1,31 @@
+{
+  "name": "POC-map-calculator",
+  "version": "0.0.1",  
+  "authors": [
+    "Iakov Korotenko"
+  ],
+  "description": "Proof-of-concept for delivery cost calculator",
+  "keywords": [
+    "googleapis",
+    "delivery",
+    "calculator"
+  ],
+  "license": "Apache",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "pages",
+    "index.html",
+    "/js"
+  ],
+  "main": [
+    "dist/css/sb-admin-2.css",
+    "dist/js/sb-admin-2.js"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6"
+  }
+}
